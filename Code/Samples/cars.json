@@ -1,0 +1,14 @@
+{
+    "car":[
+        {"brand":"Volvo", "make":"v60", "regno":"abc123", "price":14524},
+        {"brand":"Volvo", "make":"v50", "regno":"xyz908", "price":43568},
+        {"brand":"Volvo", "make":"v60", "regno":"btq987", "price":14521},
+        {"brand":"BMW", "make":"520", "regno":"jkw893", "price":1454},
+        {"brand":"BMW", "make":"528", "regno":"koi111", "price": 14333},
+        {"brand":"BMW", "make":"i3", "regno":"poj098", "price":14555},
+        {"brand":"BMW", "make":"325", "regno":"lik309", "price":14234},
+        {"brand":"Kia", "make":"Picanto", "regno":"pse390", "price":14432},
+        {"brand":"Kia", "make":"Optima", "regno":"wed938", "price":452432}
+        
+    ]
+}

@@ -1,0 +1,5 @@
+Generated 
+{{ "now" | Date:"yyyy-MM-ddTHH:mm:ss" }}
+regno,brand,make,price
+{% for item in content.car %}{{ item.regno | Upcase}},{{ item.brand }},{{ item.make | Downcase }},{{ item.price | Modulo:100 }}
+{% endfor %}
