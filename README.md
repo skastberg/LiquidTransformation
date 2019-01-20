@@ -13,4 +13,7 @@ Parameters for **LiquidTransform.exe**:
 | -u  \| –rubynaming| Use RubyNamingConvention, Logic Apps use C# naming conventions and will be the default.  |   **No**|
 |  -?  \| -h  \| –help| Show help information   |   **No**|
 
-
+**DotLiquid** Information  
+Web site http://dotliquidmarkup.org  
+Repository https://github.com/dotliquid/dotliquid  
+Nuget package https://www.nuget.org/packages/DotLiquid/  
