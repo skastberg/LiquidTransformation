@@ -26,12 +26,12 @@ jobs:
         run: cd $GITHUB_WORKSPACE
 
       - name: Restore Packages
-        run: nuget restore LiquidTransformation.sln
+        run: nuget restore ./code/LiquidTransformation.sln
 
       - name: Build Solution
         run: |
-          msbuild.exe LiquidTransformation.sln /p:platform="Any CPU" /p:configuration="Release"
-# TODO: Implement tests        
+          msbuild.exe ./code/LiquidTransformation.sln /p:platform="Any CPU" /p:configuration="Release"
+# TODO        
 #      - name: Run Tests
 #        run: vstest.console.exe .\tests\Sandbox.Tests\bin\Release\LiquidTransformation.Tests.dll
 
