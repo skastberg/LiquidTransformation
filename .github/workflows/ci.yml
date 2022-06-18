@@ -38,5 +38,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v1.0.0
         with:
-          name: published_app
+          name: LiquidTransform-${{ github.run_attempt }}
           path: ./code/LiquidTransform/bin/Release
