@@ -1,0 +1,42 @@
+name: Build and Tests
+
+on:  
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:  
+  build:    
+    runs-on: windows-latest
+    
+    steps:      
+      - uses: actions/checkout@v2
+      
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+        
+      - name: Setup VSTest
+        uses: darenm/Setup-VSTest@v1
+
+      - name: Navigate to Workspace
+        run: cd $GITHUB_WORKSPACE
+
+      - name: Restore Packages
+        run: nuget restore ./code/LiquidTransformation.sln
+
+      - name: Build Solution
+        run: |
+          msbuild.exe ./code/LiquidTransformation.sln /p:platform="Any CPU" /p:configuration="Release"
+# TODO        
+#      - name: Run Tests
+#        run: vstest.console.exe .\tests\Sandbox.Tests\bin\Release\LiquidTransformation.Tests.dll
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: published_app
+          path: ./code/LiquidTransform/bin/Release
