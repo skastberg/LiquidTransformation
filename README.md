@@ -17,3 +17,5 @@ Parameters for **LiquidTransform.exe**:
 Web site http://dotliquidmarkup.org  
 Repository https://github.com/dotliquid/dotliquid  
 Nuget package https://www.nuget.org/packages/DotLiquid/  
+
+> Using DotLiquid version **2.2.656**
