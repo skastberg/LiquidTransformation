@@ -31,7 +31,7 @@ jobs:
       - name: Build Solution
         run: |
           msbuild.exe LiquidTransformation.sln /p:platform="Any CPU" /p:configuration="Release"
-# TODO        
+# TODO: Implement tests        
 #      - name: Run Tests
 #        run: vstest.console.exe .\tests\Sandbox.Tests\bin\Release\LiquidTransformation.Tests.dll
 
