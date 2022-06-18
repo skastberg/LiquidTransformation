@@ -18,6 +18,8 @@ Web site http://dotliquidmarkup.org
 Repository https://github.com/dotliquid/dotliquid  
 Nuget package https://www.nuget.org/packages/DotLiquid/  
 
+**Blog post**
+https://skastberg.com/2019/01/20/test-your-liquid-transformations-without-deployment/
 
 > Using DotLiquid version **2.2.656**
 
