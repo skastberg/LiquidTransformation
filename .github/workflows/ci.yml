@@ -33,4 +33,10 @@ jobs:
           msbuild.exe LiquidTransformation.sln /p:platform="Any CPU" /p:configuration="Release"
 # TODO        
 #      - name: Run Tests
-#        run: vstest.console.exe .\tests\Sandbox.Tests\bin\Release\Sandbox.Tests.dll
+#        run: vstest.console.exe .\tests\Sandbox.Tests\bin\Release\LiquidTransformation.Tests.dll
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: published_app
+          path: bin\Release
