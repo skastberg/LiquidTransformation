@@ -22,4 +22,6 @@ Nuget package https://www.nuget.org/packages/DotLiquid/
 https://skastberg.com/2019/01/20/test-your-liquid-transformations-without-deployment/
 
 > Using DotLiquid version **2.2.656**
+>
+> **Note:** As per today the tool only accepts **JSON** as input document. When I wrote the tool I aimed for testing transformations I did in Logic Apps. I intentionally left that out as I could not mimic and get the same result as Microsofts code. You're more than welcome to contribute.
 
